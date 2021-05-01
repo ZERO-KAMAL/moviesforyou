@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.top {
+  background-color: #45b3e0; }
+  .top i {
+    margin-right: 8px; }
+  .top a {
+    font-weight: 500;
+    font-size: 16px;
+    color: white !important; }
+  .top .navbar {
+    padding: 10px; }
+    .top .navbar .nav-item {
+      margin-left: 10px; }
+      .top .navbar .nav-item:hover .dropdown-menu {
+        display: block; }
+        .top .navbar .nav-item:hover .dropdown-menu a {
+          color: black !important;
+          font-weight: 400;
+          font-size: 15px; }
+    .top .navbar .animate-search .containerr {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 300px;
+      height: 100px; }
+      .top .navbar .animate-search .containerr .search {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background: #45b3e0;
+        border-radius: 50%;
+        transition: all 1s;
+        z-index: 4;
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4); }
+        .top .navbar .animate-search .containerr .search:hover {
+          cursor: pointer; }
+        .top .navbar .animate-search .containerr .search::before {
+          content: "";
+          position: absolute;
+          margin: auto;
+          top: 22px;
+          right: 0;
+          bottom: 0;
+          left: 20px;
+          width: 11px;
+          height: 2px;
+          background: white;
+          transform: rotate(45deg);
+          transition: all 0.5s; }
+        .top .navbar .animate-search .containerr .search::after {
+          content: "";
+          position: absolute;
+          margin: auto;
+          top: -5px;
+          right: 0;
+          bottom: 0;
+          left: -5px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 2px solid white;
+          transition: all 0.5s; }
+      .top .navbar .animate-search .containerr input {
+        font-family: "Inconsolata", monospace;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        outline: none;
+        border: none;
+        background: #45b3e0;
+        color: white;
+        text-shadow: 0 0 10px #45b3e0;
+        padding: 0 80px 0 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 25px 0 #71c5e7, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+        transition: all 1s;
+        opacity: 0;
+        z-index: 5;
+        font-weight: bolder;
+        letter-spacing: 0.1em; }
+        .top .navbar .animate-search .containerr input:hover {
+          cursor: pointer; }
+        .top .navbar .animate-search .containerr input:focus {
+          width: 300px;
+          opacity: 1;
+          cursor: text; }
+        .top .navbar .animate-search .containerr input:focus ~ .search {
+          right: -250px;
+          background: #45b3e0;
+          z-index: 6; }
+          .top .navbar .animate-search .containerr input:focus ~ .search::before {
+            top: 0;
+            left: 0;
+            width: 20px; }
+          .top .navbar .animate-search .containerr input:focus ~ .search::after {
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            border: none;
+            background: white;
+            border-radius: 0%;
+            transform: rotate(-45deg); }
+        .top .navbar .animate-search .containerr input::placeholder {
+          color: white;
+          opacity: 0.5;
+          font-weight: bolder; }
+
+.second {
+  background: url(img/secondbg.jpg) repeat fixed 100%;
+  background-size: cover;
+  background-position-x: -250px;
+  height: 50vh;
+  font-family: 'Source Sans Pro', Arial, sans-serif; }
+  .second .title {
+    margin-top: 50px;
+    color: white; }
+    .second .title h2 {
+      font-size: 3em;
+      font-weight: 900;
+      line-height: 1; }
+    .second .title h3 {
+      font-size: 2em;
+      font-weight: 700;
+      margin: 0; }
+  .second input,
+  .second .btn {
+    border-radius: 25px;
+    padding: 10px 20px; }
+  .second .btn {
+    background-image: linear-gradient(to right, #1bd1b1 0%, #0fc5c6 51%, #07bad9 100%);
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    right: 0%; }
+
+.sixth {
+  background: url(img/bg-footer.jpg) repeat fixed 100%;
+  background-size: cover; }
+  .sixth h3,
+  .sixth p {
+    color: white; }
+  .sixth p {
+    font-size: 16px; }
+  .sixth h3 {
+    font-weight: 900; }
+  .sixth ul li {
+    color: white;
+    font-size: 14px; }
+
+footer {
+  padding: 20px;
+  background-color: #45b3e0; }
+  footer ul .btnn {
+    padding: 10px 15px;
+    border-color: #fff;
+    background-color: #fff;
+    color: #71c5e7 !important;
+    font-size: 1.3em;
+    font-weight: bold;
+    word-wrap: break-word;
+    white-space: normal;
+    text-transform: uppercase; }
+  footer ul li {
+    list-style: none;
+    line-height: 30px; }
+    footer ul li h5 {
+      color: white;
+      font-weight: 800; }
+    footer ul li a {
+      text-decoration: none;
+      color: white; }
+  footer #footer-bottom {
+    color: white;
+    text-align: center;
+    padding: 20px 0 12px 0;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 1; }
+
+/*# sourceMappingURL=style.css.map */
